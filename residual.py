@@ -7,16 +7,16 @@ from keras.utils.visualize_util import plot
 '''
 Keras Customizable Residual Unit
 
-This is an implementation of the full pre-activation residual unit from He, K., Zhang, X., Ren, S., Sun, J., "Identity Mappings in Deep Residual Networks" (http://arxiv.org/abs/1603.05027v2).
+This is as simplified implementation of the basic (no bottlenecks) full pre-activation residual unit from He, K., Zhang, X., Ren, S., Sun, J., "Identity Mappings in Deep Residual Networks" (http://arxiv.org/abs/1603.05027v2).
 '''
 
 def conv_block(feat_maps_out, prev):
     prev = BatchNormalization(axis=1, mode=2)(prev) # Specifying the axis and mode allows for later merging
     prev = Activation('relu')(prev)
-    prev = Convolution2D(feat_maps_out, 1, 1, border_mode='same')(prev) 
+    prev = Convolution2D(feat_maps_out, 3, 3, border_mode='same')(prev) 
     prev = BatchNormalization(axis=1, mode=2)(prev) # Specifying the axis and mode allows for later merging
     prev = Activation('relu')(prev)
-    prev = Convolution2D(feat_maps_out, 1, 1, border_mode='same')(prev) 
+    prev = Convolution2D(feat_maps_out, 3, 3, border_mode='same')(prev) 
     return prev
 
 
