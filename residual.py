@@ -7,7 +7,7 @@ from keras.utils.visualize_util import plot
 '''
 Keras Customizable Residual Unit
 
-This is as simplified implementation of the basic (no bottlenecks) full pre-activation residual unit from He, K., Zhang, X., Ren, S., Sun, J., "Identity Mappings in Deep Residual Networks" (http://arxiv.org/abs/1603.05027v2).
+This is a simplified implementation of the basic (no bottlenecks) full pre-activation residual unit from He, K., Zhang, X., Ren, S., Sun, J., "Identity Mappings in Deep Residual Networks" (http://arxiv.org/abs/1603.05027v2).
 '''
 
 def conv_block(feat_maps_out, prev):

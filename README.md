@@ -8,4 +8,4 @@ This is a simplified implementation of the basic (no bottlenecks) full pre-activ
 
 Visit the reference implementation at [keras-resnet](https://github.com/raghakot/keras-resnet) to see a full model with bottlenecks and downsampling between units included. 
 
-Further credit to: [Keunwoo Choi](github.com/keunwoochoi), [Nicholas Dronen](github.com/ndronen), and [Alejandro Newell](github.com/anewell) for creating the residual blocks I based this off of.
+Further credit to: [Keunwoo Choi](https://github.com/keunwoochoi), [Nicholas Dronen](https://github.com/ndronen), and [Alejandro Newell](https://github.com/anewell) for creating the residual blocks I based this off of.
